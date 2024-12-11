@@ -8,6 +8,11 @@ file_path = "/Users/esbeidagarcia/Downloads/Electric_Vehicle_Population_Data.csv
 st.title("The Evolution of Electric Vehicles in Washington State")
 st.text("By: Esbeida Garcia & Kinza Chouhdry")
 
+st.subheader("Introduction")
+st.text("""
+Electric vehicles (EVs) play a critical role in the transition toward sustainable and energy-efficient transportation. Washington State, recognized for its commitment to clean energy policies, has experienced significant growth in EV adoption in recent years. This project examines key trends, performance metrics, and the regional distribution of EVs within the state, providing a detailed analysis of how electric vehicles are contributing to advancements in transportation and environmental sustainability. The analysis utilizes a series of interactive and contextual visualizations to present insights into the growth of EV adoption over time, the performance and range capabilities of different manufacturers, and the geographic distribution of EV registrations at both state and county levels. As an attempt to earn extra credit, the Electric Vehicle Distribution by County visualization was created to offer a deeper understanding of how EVs are adopted across various regions. All other visualizations, including line charts, bar charts, and histograms, were generated using Python and advanced data visualization libraries. The only exception is the map of EV charging stations, which was sourced externally to enhance the overall analysis. This project provides a comprehensive perspective on Washington State’s electric vehicle landscape, supporting policymakers, researchers, and stakeholders in understanding the evolving dynamics of EV adoption.
+""")
+
 st.subheader("Electric Vehicle Population Dataset")
 st.markdown("[Access to the full dataset can be obtained here](https://catalog.data.gov/dataset/electric-vehicle-population-data)")
 data = pd.read_csv(file_path)
@@ -67,6 +72,7 @@ st.subheader("Contextual Visualizations")
 st.text(""" 
 The third and fourth visualizations dive into more contextual details, such as the distribution of electric vehicles across counties in Washington State and the average electric range by manufacturer. The county distribution visualization groups counties based on the number of vehicles and uses a color-coded bar chart to show adoption rates, helping users understand regional trends in EV adoption. The average electric range by manufacturer chart highlights the leading manufacturers in terms of range, allowing users to compare the performance of top electric vehicle brands. These visualizations, paired with a map of EV charging stations in the state, provide a comprehensive view of the electric vehicle landscape in Washington, offering insights into both adoption patterns and vehicle performance.
 """)
+st.markdown("[View the code on GitHub](https://github.com/esbeidagarcia/esbeidagarcia.github.io/blob/main/app.py)")
 #Contextual Visualization: EV Distribution by County
 st.subheader("Electric Vehicle Distribution by County")
 st.markdown("""
